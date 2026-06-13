@@ -8,3 +8,29 @@ The pipeline includes data loading, preprocessing, label encoding, text cleaning
 The dataset is loaded from:
 ```python
 df = pd.read_csv('text_emotion_assignment.csv')
+Preprocessing Steps
+The notebook performs the following preprocessing steps:
+
+Loading the dataset with pandas
+Checking class distribution using value_counts()
+Extracting text and emotion columns
+Encoding emotion labels using LabelEncoder
+Cleaning text with regular expressions
+Splitting the dataset into training and testing sets
+Example:
+
+python
+clean_text = [re.sub(r'[^\\w\\s]', '', x) for x in text]
+Model Workflow
+The project follows a standard supervised learning pipeline:
+
+Load the dataset
+Clean and prepare the text data
+Encode labels
+Split the data into train and test sets
+Train a classification model
+Evaluate model performance
+Purpose
+This project demonstrates how text emotion classification can be implemented using Python, pandas, scikit-learn, and NLP preprocessing techniques.
+
+It can be used as a baseline for more advanced transformer-based models.
