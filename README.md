@@ -8,7 +8,7 @@ The pipeline includes data loading, preprocessing, label encoding, text cleaning
 The dataset is loaded from:
 ```python
 df = pd.read_csv('text_emotion_assignment.csv')
-Preprocessing Steps
+## Preprocessing Steps
 The notebook performs the following preprocessing steps:
 
 Loading the dataset with pandas
